@@ -44,9 +44,43 @@
 
 // console.log(salaConcat)
 
-const alunos = ['Maria', 'Carlos', 'Eduardo']
-const mediasAlunos = [10,9,8]
+// const alunos = ['Maria', 'Carlos', 'Eduardo']
+// const mediasAlunos = [10,9,8]
 
-let listaDeNotasEAlunos=[alunos, mediasAlunos]
+// let listaDeNotasEAlunos=[alunos, mediasAlunos]
 
-console.log(listaDeNotasEAlunos)
+// console.log(listaDeNotasEAlunos)
+
+// const exibeNomeNota = (nomeDoAluno) =>{
+//     if(listaDeNotasEAlunos[0].includes(nomeDoAluno)){
+//         let indice = listaDeNotasEAlunos[0].indexOf(nomeDoAluno)
+//         return listaDeNotasEAlunos[0][indice] + ' , sua média é '+ listaDeNotasEAlunos[1][indice]
+//     }else{
+//         return "Aluno não cadastrado"
+//     }
+// }
+
+// console.log(exibeNomeNota("João"))
+
+
+// const numeros = [100, 200, 300, 400, 500, 600]
+
+// for (let i = 0; i<numeros.length; i++){
+//     console.log(i, numeros[i])
+// }
+
+const notas = [ 10,6.5,8,7.5]
+
+let somaDasNotas = 0
+
+// for (let i =0; i<notas.length;i++){
+//     somaDasNotas+=notas[i]
+// }
+
+notas.forEach(resp=>{
+    return somaDasNotas += resp
+})
+
+let media = somaDasNotas/notas.length
+
+console.log(media)
