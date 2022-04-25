@@ -9,7 +9,7 @@ const precoLivros = [
     },
     {
         titulo: "Java",
-        preco: 20
+        preco: 30
     },
     {
         titulo: "Elixir",
