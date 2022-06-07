@@ -1,8 +1,6 @@
 import chalk from 'chalk';
 import * as fs from 'node:fs';
 
-
-
 function extraiLinks(texto){
     const regex = /\[([^\]]*)\]\((https?:\/\/[^$#\s].[^\s]*)\)/gm;
     const arrayResultados=[];
