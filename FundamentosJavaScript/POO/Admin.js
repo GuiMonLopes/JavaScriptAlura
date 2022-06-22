@@ -1,16 +1,20 @@
 import User from "./User.js";
 
 export default class Admin extends User {
-    constructor(nome, email, nascimento, role = "admin", ativo = true){
-        super(nome, email, nascimento, role, ativo);
+    constructor(nome,sobrenome, email, nascimento, role = "admin", ativo = true){
+        super(nome,sobrenome, email, nascimento, role, ativo);
     }
 
-    nomeAdmin(){
-        return `${this.nome}`
-    }
+    // nomeAdmin(){
+    //     return `${this.nome}`
+    // }
 
     criarCurso(nomeDoCurso, numeroDeVagas){
         return `Curso de ${nomeDoCurso} criado com ${numeroDeVagas} vagas`
+    }
+
+    exibirInfos(){
+        return `${this.nome}, ${this.role}`
     }
 }
 
